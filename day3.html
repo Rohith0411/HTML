@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio/video</title>
+  </head>
+  <body>
+    <h2>Audio</h2>
+    <audio controls>
+      <source src="./video/audio/sample-6s.mp3" type="audio/mp3" />
+    </audio>
+    <h2>Video</h2>
+    <video controls width="400" height="auto" muted loop autoplay>
+      <source src="./video/audio/sample-5s.mp4" type="video/mp4" />
+    </video>
+    <h2>Form</h2>
+    <form action="https//www.google.com" method="post" onsubmit="return false">
+      <label>Name:</label>
+      <input type="text" placeholder="Enter Your Name" name="un" required/><br />
+      <label>Password:</label>
+      <input type="password" placeholder="Enter Your Password" name="pw" minlength="4" maxlength="8" required/><br />
+      <label>City:</label>
+      <input type="text" name="place" value="Karur" readonly /><br />
+      <label>Select Gender:</label><br />
+      <input type="radio" name="gender" />Male
+      <input type="radio" name="gender" />Female<br />
+      <label>Enter address</label><br />
+      <textarea rows="4" cols="25"></textarea><br />
+      <label>Marks</label>
+      <input type="number" name="mark" min="0" max="100" /><br />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+    <hr size="8" color="red" />
+    <h2>Form Task</h2>
+    <form>
+      <table>
+        <tr>
+          <td><label>Enter User Name</label></td>
+          <td><input type="text" name="user" left /></td>
+        </tr>
+        <tr>
+          <td><label>Enter Mark</label></td>
+          <td><input type="number" min="0" max="100" /></td>
+        </tr>
+        <tr>
+          <td><label>Enter your Feedback</label></td>
+          <td><textarea rows="5" cols="50"></textarea></td>
+        </tr>
+        <tr>
+          <td><label>Enter Mobile Number</label></td>
+          <td><input type="number" max="10" /></td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="save" /></td>
+          <td><input type="reset" value="clear" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
